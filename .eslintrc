@@ -1,0 +1,27 @@
+{
+  "env": {
+    "node": true,
+    "es6": true,
+    "browser": false,
+    "jest": true
+  },
+  "extends": [
+    "airbnb-base"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 2018
+  },
+  "settings": {
+    "node": {
+      "extensions": [
+        ".ts",
+        ".json"
+      ]
+    },
+    "import/resolver": {
+      "jest": {
+        "jestConfigFile": "./jest.conf.js"
+      }
+    }
+  }
+}

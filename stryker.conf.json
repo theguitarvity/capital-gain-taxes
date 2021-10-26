@@ -1,0 +1,20 @@
+{
+  "$schema": "./node_modules/@stryker-mutator/core/schema/stryker-schema.json",
+  "packageManager": "npm",
+  "reporters": [
+    "html",
+    "clear-text",
+    "progress"
+  ],
+  "testRunner": "jest",
+  "coverageAnalysis": "perTest",
+  "ignorePatterns": [
+    "./src/config",
+    "./src/infra"
+  ],
+  "mutate": [
+    "src/main/**/*.ts",
+    "!src/infra",
+    "!src/main/adapters/validation"
+  ]
+}

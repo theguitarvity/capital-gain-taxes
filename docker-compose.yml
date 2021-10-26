@@ -1,0 +1,16 @@
+version: "3.8"
+services:
+  capital-gain-taxes-ms:
+    image: node:14
+    container_name: capital-gain-taxes-ms
+    ports:
+      - 3333:80
+    volumes:
+      - ./:/var/www
+    command:
+      - /bin/bash
+      - -c
+      - |
+        cd var/www
+        npm install
+        npm start
